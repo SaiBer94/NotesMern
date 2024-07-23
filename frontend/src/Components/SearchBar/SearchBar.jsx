@@ -1,23 +1,27 @@
-import React from 'react'
-import {FaMagnifyingGlass} from 'react-icons/fa6';
-import {IoMdClose} from 'react-icons/io';
+// SearchBar.jsx
+import React from 'react';
+import { FaMagnifyingGlass } from 'react-icons/fa6';
+import { IoMdClose } from 'react-icons/io';
+import './SearchBar.css'; // Import the CSS
 
-
-const SearchBar = ({value, onChange, handleSearch, onClearSearch}) => {
+const SearchBar = ({ value, onChange, handleSearch, onClearSearch }) => {
   return (
-    <div>
-      <input
-       type="text"
-       placeholder='search notes'
-       value={value}
-       onChange={onChange}
-       />
-       
-       {value && <IoMdClose onClick={onClearSearch}/>}
-       
-       <FaMagnifyingGlass onClick={handleSearch}/>
+    <div className="search-bar-container">
+      <div className="input-wrapper">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search notes"
+          value={value}
+          onChange={onChange}
+        />
+        {value && (
+          <IoMdClose className="clear-button" onClick={onClearSearch} />
+        )}
+        <FaMagnifyingGlass className="search-icon" onClick={handleSearch} />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;

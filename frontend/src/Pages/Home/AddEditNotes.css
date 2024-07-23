@@ -1,0 +1,66 @@
+/* AddEditNotes.css */
+
+/* Container for the modal content */
+.add-edit-notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between sections */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the modal */
+  }
+  
+  /* Styling for input and textarea fields */
+  .add-edit-notes-container input,
+  .add-edit-notes-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .add-edit-notes-container textarea {
+    resize: vertical; /* Allow vertical resizing */
+    margin-bottom: 20px; /* Space below textarea */
+  }
+  
+  .add-edit-notes-container input::placeholder,
+  .add-edit-notes-container textarea::placeholder {
+    color: #888888; /* Placeholder text color */
+  }
+  
+  /* Label styling */
+  .add-edit-notes-container label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333333; /* Dark text color */
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Tag input styling */
+  .add-edit-notes-container .tag-input {
+    margin-bottom: 20px; /* Space below tag input */
+  }
+  
+  /* Button styling */
+  .add-edit-notes-container button {
+    background-color: #2196f3; /* Blue background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for button */
+  }
+  
+  .add-edit-notes-container button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  }
+  

@@ -1,16 +1,20 @@
-import React from 'react'
-import { getInitials } from '../../Utils/helper'
+// ProfileInfo.jsx
+import React from 'react';
+import { getInitials } from '../../Utils/helper';
+import './ProfileInfo.css'; // Import the CSS
 
-const ProfileInfo = ({onLogout}) => {
+const ProfileInfo = ({ onLogout }) => {
   return (
-    <div>
-      <div>{getInitials("John doe")}</div>
-      <div>
+    <div className="profile-info-container">
+      <div className="profile-initials">
+        {getInitials("John Doe")}
+      </div>
+      <div className="profile-info-details">
         <p>Name</p>
         <button onClick={onLogout}>Logout</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProfileInfo
+export default ProfileInfo;

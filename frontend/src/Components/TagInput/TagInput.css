@@ -1,0 +1,66 @@
+/* TagInput.css */
+
+.tag-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between tag list and input area */
+  }
+  
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+  }
+  
+  .tag-item {
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside tag */
+    font-size: 0.9em; /* Slightly smaller font size */
+    display: flex;
+    align-items: center;
+  }
+  
+  .tag-remove {
+    background: none;
+    border: none;
+    margin-left: 5px; /* Space between tag text and remove button */
+    cursor: pointer;
+    color: #ff5722; /* Slightly subdued red for remove button */
+    transition: color 0.2s; /* Smooth transition */
+  }
+  
+  .tag-remove:hover {
+    color: #d32f2f; /* Darker red on hover */
+  }
+  
+  .tag-input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and add button */
+  }
+  
+  .tag-input-area input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .tag-input-area .tag-add {
+    background-color: #2196f3; /* Soft blue background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Smooth transition */
+  }
+  
+  .tag-input-area .tag-add:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+  }
+  

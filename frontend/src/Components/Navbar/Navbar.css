@@ -1,0 +1,64 @@
+/* Navbar.css */
+.navbar {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+    padding: 15px 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space out the items */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 2em; /* Larger font size */
+    color: #ffffff; /* White text color */
+    font-family: 'Arial', sans-serif; /* Cleaner font */
+  }
+  
+  .navbar h4 {
+    margin: 0;
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #ffffff; /* White text color */
+    font-family: 'Arial', sans-serif; /* Cleaner font */
+  }
+  
+  .search-bar {
+    flex: 1; /* Take up remaining space */
+    margin: 0 20px; /* Margin on sides */
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-info button {
+    background-color: #4caf50; /* Green background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 20px; /* Larger padding */
+    border-radius: 25px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-family: 'Arial', sans-serif; /* Cleaner font */
+  }
+  
+  .profile-info button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+  
+  .clear-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.1em; /* Slightly larger font */
+    font-family: 'Arial', sans-serif; /* Cleaner font */
+  }
+  
+  .clear-button:hover {
+    color: #ffeb3b; /* Yellow text color on hover */
+  }
+  

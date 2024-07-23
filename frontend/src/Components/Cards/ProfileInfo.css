@@ -1,0 +1,49 @@
+/* ProfileInfo.css */
+.profile-info-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .profile-initials {
+    background-color: #4caf50; /* Green background color */
+    color: #ffffff; /* White text color */
+    border-radius: 50%; /* Circle shape */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-right: 15px; /* Space between initials and text */
+  }
+  
+  .profile-info-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-info-details p {
+    margin: 0;
+    font-size: 1em;
+    color: #333333; /* Dark text color */
+  }
+  
+  .profile-info-details button {
+    background-color: #ff5722; /* Orange background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .profile-info-details button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+  }
+  

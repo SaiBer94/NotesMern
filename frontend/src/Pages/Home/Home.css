@@ -1,0 +1,76 @@
+/* Home.css */
+
+/* Container for the Home page content */
+.home-container {
+    padding: 20px;
+    background-color: #f5f5f5; /* Light gray background for the whole page */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* NoteCard container */
+  .note-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between note cards */
+  }
+  
+  /* Button to open the modal */
+  .add-note-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2196f3; /* Blue background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  
+  .add-note-button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  }
+  
+  /* Modal styles */
+  .ReactModal__Overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ReactModal__Content {
+    position: relative;
+    background: #ffffff; /* White background for modal */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; /* Max width of the modal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for modal */
+    margin: auto;
+  }
+  
+  .ReactModal__Content::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8cGF0aCBkPSJNNTAsMEwgMTAsNTAgTTEwLDYwIEwgNzAsMTAwIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1kYXNoYXJyYXk9IjEuMiIvPjwvcGF0aD4KPC9zdmc+Cg==') no-repeat center center;
+    background-size: 24px 24px;
+    cursor: pointer;
+  }
+  
+  .ReactModal__Content::after {
+    top: 10px;
+    right: 10px;
+  }
+  
