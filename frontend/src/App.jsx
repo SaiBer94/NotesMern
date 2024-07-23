@@ -7,7 +7,7 @@ import Login from './Pages/Login/Login';
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path='/' exact element={<Home/>}/>
+      <Route path='/home' exact element={<Home/>}/>
       <Route path='/login' exact element={<Login/>}/>
       <Route path='/signup' exact element={<SignUp/>}/>
     </Routes>
